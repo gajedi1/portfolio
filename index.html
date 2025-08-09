@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samir Ghimire | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#0a0a0f">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <a href="#">Samir<span>Ghimire</span></a>
+                <span class="dev-notice">
+                    <span class="pulse"></span>
+                    <span>Site in Development</span>
+                </span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Samir Ghimire</span></h1>
+            <h2>Web Developer</h2>
+            <p>I build exceptional digital experiences</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="section-title animate-on-scroll" data-animation="fade-in-up">About Me</h2>
+        <div class="about-content">
+            <p class="animate-on-scroll" data-animation="fade-in-up" data-delay="0.2">Hello! I'm a passionate web developer with expertise in creating beautiful and functional websites. I love turning ideas into reality through code.</p>
+            <p class="animate-on-scroll" data-animation="fade-in-up" data-delay="0.3">When I'm not coding, you can find me exploring new technologies, contributing to open source, or enjoying outdoor activities.</p>
+            <div class="skills animate-on-scroll" data-animation="fade-in-up" data-delay="0.4">
+                <h3>Skills</h3>
+                <div class="skills-container">
+                    <span class="skill-tag" data-animation="scale-in" data-delay="0.5">HTML5</span>
+                    <span class="skill-tag" data-animation="scale-in" data-delay="0.6">CSS3</span>
+                    <span class="skill-tag" data-animation="scale-in" data-delay="0.7">JavaScript</span>
+                    <span class="skill-tag" data-animation="scale-in" data-delay="0.8">Responsive Design</span>
+                    <span class="skill-tag" data-animation="scale-in" data-delay="0.9">Git</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title animate-on-scroll" data-animation="fade-in-up">My Projects</h2>
+                <span class="development-badge">Development in Progress</span>
+            </div>
+            <div id="projects-container" class="projects-grid">
+                <!-- Project cards will be added dynamically via JavaScript -->
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Loading projects...</p>
+                </div>
+            </div>
+            <div class="github-button-container">
+                <a href="https://github.com/gajedi1" target="_blank" rel="noopener noreferrer" class="github-button">
+                    <i class="fab fa-github"></i> View All Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll" data-animation="fade-in-up">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category animate-on-scroll" data-animation="fade-in-up">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">
+                            <i class="fab fa-html5"></i> HTML5
+                        </span>
+                        <span class="skill-tag">
+                            <i class="fab fa-css3-alt"></i> CSS3
+                        </span>
+                        <span class="skill-tag">
+                            <i class="fab fa-js"></i> JavaScript
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="skill-category animate-on-scroll" data-animation="fade-in-up" data-delay="0.1">
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">
+                            <i class="fab fa-php"></i> PHP
+                        </span>
+                        <span class="skill-tag">
+                            <i class="fas fa-database"></i> MySQL
+                        </span>
+                        <span class="skill-tag">
+                            <i class="fas fa-plug"></i> Webhooks
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="skill-category animate-on-scroll" data-animation="fade-in-up" data-delay="0.2">
+                    <h3>Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">
+                            <i class="fab fa-git-alt"></i> Git
+                        </span>
+                        <span class="skill-tag">
+                            <i class="fab fa-github"></i> GitHub
+                        </span>
+                        <span class="skill-tag">
+                            <i class="fas fa-terminal"></i> CLI
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title animate-on-scroll" data-animation="fade-in-up">Get In Touch</h2>
+        <div class="contact-content">
+            <p class="animate-on-scroll" data-animation="fade-in-up" data-delay="0.2">I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll get back to you as soon as possible!</p>
+            <div class="contact-buttons">
+                <a href="https://github.com/gajedi1" target="_blank" rel="noopener noreferrer" class="btn">
+                    <i class="fab fa-github"></i> View My GitHub
+                </a>
+                <a href="mailto:unonown97@gmail.com" class="btn btn-outline">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Designed & Built by Samir Ghimire</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
